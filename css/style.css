@@ -1,0 +1,1201 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Mo';
+    src: url('../font/DungGeunMo.woff');
+}
+
+@font-face {
+    font-family: 'Mo';
+    src: url('../font/DungGeunMo.woff2');
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Mo'; */
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+}
+
+/* startmain */
+.startmain {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/startbg.png') no-repeat center/cover;
+    cursor: url('../images/');
+    position: relative;
+    font-family: 'Mo';
+    overflow: hidden;
+    cursor: url('../images/coin_normal.png') 5 5, auto;
+}
+
+.startmain .start_logo img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -77%);
+    z-index: 99;
+}
+
+/* 나중에 애니메이션 주기~ */
+.startmain .cloud img {
+    position: absolute;
+}
+
+.startmain .cloud img:nth-child(1) {
+    top: 10%;
+    left: -5%;
+    width: 500px;
+}
+
+.startmain .cloud img:nth-child(2) {
+    top: -1%;
+    left: 30%;
+    width: 300px;
+}
+
+.startmain .cloud img:nth-child(3) {
+    top: 46%;
+    left: 32%;
+    width: 110px;
+}
+
+.startmain .cloud img:nth-child(4) {
+    left: 85%;
+    top: 32%;
+    width: 500px;
+}
+
+.startmain .cloud img:nth-child(5) {
+    left: 34%;
+    top: 35%;
+}
+
+.startmain .cloud img:nth-child(6) {
+    left: 35.2%;
+    top: 38%;
+}
+
+.startmain .cloud img:nth-child(7) {
+    left: 42.5%;
+    top: 50%;
+}
+
+.startmain .cloud img:nth-child(8) {
+    left: 51.7%;
+    top: 22%;
+}
+
+.startmain .cloud img:nth-child(9) {
+    left: 52.9%;
+    top: 27%;
+}
+
+.startmain .cloud img:nth-child(10) {
+    left: 61.5%;
+    top: 39%;
+}
+
+.startmain .cloud img:nth-child(11) {
+    left: 64.5%;
+    top: 56%;
+}
+
+.startmain .start_btn a {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    font-size: 2.8rem;
+    cursor: url('../images/coingif.gif') auto;
+}
+
+.startmain .start_btn a:hover {
+    cursor: url('../images/coingif.gif') 5 5, auto;
+}
+
+
+.startmain p {
+    position: absolute;
+    font-size: 2.2rem;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.startmain .start_btn a::before {
+    content: '';
+    display: inline-block;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    transform: translateY(4px);
+}
+
+/* 메인 */
+.main-item {
+    height: 100vh;
+    position: relative;
+    font-family: 'Mo';
+    /* 나중에 지울거임 */
+    background-color: khaki;
+    /* none */
+    display: none;
+}
+
+.main-item .bcc-video {
+    /* blur 넣기 */
+}
+
+.main-item .window {
+    width: 35rem;
+    /* width: 550px; */
+    height: 37.5rem;
+    /* 추후에 bcc 지워야함 */
+    background-color: #99cfff;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-item .window .window-inner {
+    margin-top: 0.2rem;
+    width: 34.5rem;
+    height: 4.2rem;
+    /* background-color: aliceblue; */
+}
+
+.main-item .window .window-in-up {
+    width: 34.5rem;
+    height: 2rem;
+    background-color: #6eaac4;
+    border: 2px solid #bbbbc0;
+    color: #fff;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-item .window .window-in-up p {
+    transform: translate(0.5rem, -0.2rem);
+}
+
+.main-item .window .window-in-up .window-button {
+    display: flex;
+    width: 3.3rem;
+    justify-content: space-around;
+}
+
+.main-item .window .window-in-up .window-line {
+    margin-top: 0.15rem;
+    border-left: 2px solid #eee;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #000;
+    border-right: 1px solid #000;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #99cfff;
+}
+
+.main-item .window .window-in-up .window-line span {
+    border-bottom: 2px;
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background-color: #000;
+    transform: translate(0.2rem, 1rem);
+}
+
+.main-item .window .window-in-up .window-x {
+    margin-top: 0.15rem;
+    border-left: 2px solid #eee;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #000;
+    border-right: 1px solid #000;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #99cfff;
+}
+
+.main-item .window .window-in-up .window-x span {
+    border-top: 2px;
+    display: block;
+    width: 1.2rem;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(45deg) translate(0.5rem, 0.3rem);
+}
+
+.main-item .window .window-in-up .window-x span::after {
+    content: '';
+    display: block;
+    border-top: 2px;
+    width: 1.2rem;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(-90deg);
+}
+
+.main-item .window .window-in-down {
+    width: 34.5rem;
+    height: 1.95rem;
+    margin-top: 0.2rem;
+    background-color: #6eaac4;
+    border-top: 1.5px solid #eee;
+    border-bottom: 1.5px solid #eee;
+    line-height: 2rem;
+}
+
+.main-item .window .window-in-down .window-down-inner {
+    width: 34.5rem;
+    height: 1.8rem;
+    border: 1.8px solid #b1aeae;
+}
+
+.main-item .window .window-in-down .window-inner-box {
+    width: 0.3rem;
+    margin-top: 0.1rem;
+    height: 1.4rem;
+    background-color: #eee;
+    border: 1.5px solid #8b8b8b;
+    margin-left: 0.1rem;
+}
+
+.main-item .window .window-in-down .window-inner-box::after {
+    content: 'Loading...';
+    display: block;
+    transform: translate(0.4rem, -0.4rem);
+    font-size: 1.3rem;
+    color: #212121;
+}
+
+.main-item .window .window-down {
+    width: 35rem;
+    height: 37.5rem;
+    background-color: #99cfff;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.main-item .window .window-down .win-inner {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 37.5rem;
+    align-items: center;
+}
+
+.main-item .window .window-down .win-inner .main-gif {
+    width: 34rem;
+    height: 29rem;
+    background-color: #fff;
+    margin: 0.3rem 0.2rem 0.2rem 0;
+    border-top: 2px solid #31373c;
+    border-left: 2px solid #31373c;
+    border-bottom: 1.5px solid #eee;
+}
+
+.main-gif video {
+    /* video gif 삽입 */
+    width: 100%;
+    height: 100%;
+}
+
+.main-item .window .play-btn {
+    margin-right: 0.2rem;
+    border: 2px solid #666;
+    width: 33.9rem;
+    height: 7.5rem;
+    display: flex;
+    /* 확인차 bcc */
+    background-color: #4bbcef;
+    justify-content: space-around;
+}
+
+.main-item .window .play-btn .play-btn-box {
+    width: 0.4rem;
+    height: 95%;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+    background-color: #eee;
+    border: 2px solid #8b8b8b;
+}
+
+.main-item .window .play-btn a {
+    margin: 0.2rem 0.3rem 0.2rem 0;
+    border-top: 2px solid #8b8b8b;
+    border-left: 2px solid #8b8b8b;
+    border-right: 1.8px solid #fff;
+    border-bottom: 1.8px solid #fff;
+    padding: 40px 83px;
+    font-size: 1.5rem;
+    background-color: #97e2ff;
+}
+
+.main-item .window .play-btn i {
+    transform: translateY(0.2rem);
+}
+
+.main-item .myicon {
+    position: absolute;
+    right: 0;
+    top: 8%;
+    height: 400px;
+    width: 500px;
+}
+
+.main-item .myicon .pro-icon {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: right;
+    background: url('../images/porfileicon3.png') no-repeat center/cover;
+    cursor: pointer;
+}
+
+.main-item .myicon .pro-icon:hover {
+    background: url('../images/porfileicon2.png') no-repeat center/cover;
+}
+
+.main-item .myicon .download {
+    background: url('../images/download_bubble.png') no-repeat center/contain;
+    width: 350px;
+    height: 220px;
+    margin-top: 40%;
+    margin-left: 19%;
+    display: flex;
+    flex-wrap: wrap;
+    /* 나중에 누르면 나타나게 */
+    display: none;
+}
+
+.main-item .myicon h2 {
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    transform: translate(30%, 150%);
+    text-decoration: underline;
+}
+
+.main-item .myicon .download img {
+    width: 110px;
+    height: 80px;
+    transform: translate(110%, 70%);
+}
+
+/* hover하면 위로 통통튀는 느낌 */
+.main-item-btn {
+    display: flex;
+    height: 150px;
+    width: 500px;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 4%;
+    transform: translateX(-50%);
+    line-height: 150px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.main-item .contact_btn {
+    flex: 1 1 auto;
+}
+
+.main-item .profile_btn {
+    flex: 1 1 auto;
+}
+
+.main-item .gotop {
+    /* start 화면에서 숨길수는 없는지? */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 100px;
+    width: 100px;
+    z-index: 99;
+}
+
+.main-item .gotop img {
+    width: 100%;
+}
+
+/* 메뉴 */
+.container .main-li {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 6rem;
+    padding-left: 80px;
+    padding-top: 60px;
+    overflow-y: scroll;
+
+    font-family: "halyard-text", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+    /* none */
+    display: none;
+}
+
+.main-li #myworks {
+    font-family: "halyard-text", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container .main-li li.question {
+    position: relative;
+    width: 45%;
+}
+
+.container .main-li .depth1 .question:nth-child(1):hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -60%;
+    left: 130%;
+    transform: rotate(-15deg);
+    width: 350px;
+    height: 350px;
+    background: url('../images/blender_3d_logo.png') no-repeat center/contain;
+    animation: blender 0.7s ease-in;
+}
+
+.container .main-li .depth1 .question:nth-child(1):hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 150%; left: 170%;
+    transform: rotate(15deg);
+    width: 350px;
+    height: 350px;
+    background: url('../images/c4d_logo.png') no-repeat center/contain;
+    animation: c4d 0.7s ease-in;
+}
+
+@keyframes blender {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        top: 0;
+    }
+
+    to {
+        transform: rotate(-15deg);
+        opacity: 1;
+        top: -60%;
+    }
+}
+@keyframes c4d {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        top: 210%;
+    }
+
+    to {
+        transform: rotate(15deg);
+        opacity: 1;
+        top: 150%;
+    }
+}
+.container .main-li .depth1 .question:nth-child(3):hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -200%;
+    left: 130%;
+    transform: rotate(8deg);
+    width: 350px;
+    height: 350px;
+    background: url('../images/ae_3d_icon.png') no-repeat center/contain;
+    animation: aftereffect 0.7s ease-in;
+}
+.container .main-li .depth1 .question:nth-child(3):hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 40%; left: 170%;
+    transform: rotate(-20deg);
+    width: 350px;
+    height: 350px;
+    background: url('../images/pr_3d_icon.png') no-repeat center/contain;
+    animation: pr 0.7s ease-in;
+}
+@keyframes aftereffect {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        top: -140%;
+    }
+
+    to {
+        transform: rotate(8deg);
+        opacity: 1;
+        top: -200%;
+    }
+}
+@keyframes pr {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        top: 100%;
+    }
+
+    to {
+        transform: rotate(-20deg);
+        opacity: 1;
+        top: 40%;
+    }
+}
+.container .main-li .depth1 .question:nth-child(5):hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -70%;
+    left: 130%;
+    transform: rotate(-20deg);
+    width: 350px;
+    height: 350px;
+    background: url('../images/ai_3d_icon.png') no-repeat center/contain;
+    animation: ai 0.7s ease-in;
+}
+.container .main-li .depth1 .question:nth-child(5):hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -300%; left: 170%;
+    transform: rotate(20deg);
+    width: 350px;
+    height: 350px;
+    background: url('../images/ps_3d_icon.png') no-repeat center/contain;
+    animation: ps 0.7s ease-in;
+}
+@keyframes ai {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        top: -10%;
+    }
+
+    to {
+        transform: rotate(-20deg);
+        opacity: 1;
+        top: -70%;
+    }
+}
+@keyframes ps {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+        top: -240%;
+    }
+
+    to {
+        transform: rotate(20deg);
+        opacity: 1;
+        top: -300%;
+    }
+}
+.container .main-li .depth1 .A {
+    margin-top: 40px;
+}
+
+.container .main-li .question a {
+    display: block;
+    color: #fff;
+    font-size: 5rem;
+    width: 100%;
+    margin-top: 40px;
+    border-bottom: 5px solid;
+    /* border-color: ; */
+    padding-bottom: 15px;
+    margin-left: 50px;
+}
+
+.swiper {
+    width: 90%;
+    height: 300px;
+    margin: 50px auto;
+    font-size: 1.6rem;
+    color: white;
+    overflow: visible;
+}
+
+.swiper-pagination {
+    top: 110%;
+}
+
+.swiper-slide {
+    background-color: #fff;
+}
+
+li.A-1 .swiper-slide:nth-child(1) iframe{
+    width: 100%;
+    height: 100%;
+}
+li.A-1 .swiper-slide:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 아코디언 형태로 나오게해야함 */
+li.A {
+    display: none;
+}
+
+/* jqeuery로 클래스 추가 (아이콘 나옴) */
+.container .main-li .depth1 li:hover a {}
+
+/* 윈도우 팝업 창 */
+
+/* 영상 팝업창 */
+main .container .video-popup {
+    position: absolute;
+    top: 100%; left: 0;
+    height: 100vh;
+    width: 100%;
+    /* 임시 */
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+    /*  */
+    display: none;
+}
+
+main .container .video-popup ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    line-height: 5rem;
+    margin-left: auto;
+}
+
+main .container .video-popup ul li a {
+    font-size: 1.7rem;
+    font-family: "halyard-text", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main .container .video-popup ul li:hover a {
+    /* 폰트 바뀌게 */
+
+}
+
+main .container .video-popup .txt {
+    border-top: 4px solid #030abc;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-family: "halyard-text", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+main .container .video-popup .txt a {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    margin: 1.2rem 1.2rem 0 auto;
+    float: right;
+    /* 임시색 */
+    background-color: #030abc;
+    position: relative;
+}
+
+main .container .video-popup .txt a::before,
+main .container .video-popup .txt a::after {
+    content: '';
+    border-top: 4px solid #fff;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    display: block;
+}
+
+main .container .video-popup .txt a::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+main .container .video-popup .txt a::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+main .container .video-popup .txt h2 {
+    margin: 0.5rem 0 0 5rem;
+}
+
+main .container .video-popup .txt h3 {
+    /* 폰트 바꾸기 (한글)*/
+    font-size: 1.8rem;
+    margin: 0 0 0 7rem;
+}
+
+main .container .video-popup .txt .clip {
+    margin-top: 2rem;
+    display: flex;
+    margin-left: 7rem;
+}
+
+
+main .container .video-popup .txt p {
+    margin: 1.5rem 0 0 7rem;
+    font-size: 1.8rem;
+    width: 45%;
+    /* 한글폰트 넣을거임 */
+    /* font-family: "halyard-text", sans-serif;
+    font-weight: 900;
+    font-style: normal; */
+}
+
+main .container .video-popup .img-box {
+    margin: 60px auto;
+    /* margin-bottom: 60px; */
+    width: 80%;
+    height: 80vh;
+    background-color: aliceblue;
+    box-shadow: 13px 13px 21px -10px rgba(66, 68, 90, .5);
+}
+
+main .container .video-popup .img-box .img-up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+main .container .video-popup .img-box .img-R {
+    width: 50%;
+    height: 50%;
+}
+
+main .container .video-popup .img-box .img-L {
+    width: 50%;
+    height: 50%;
+}
+
+main .container .video-popup .img-box .img-down {
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+/* jqeuery로 클래스 추가 (색상 변경) */
+
+/* profile */
+main .container .profile {
+    width: 100%;
+    height: 100vh;
+    background: #1fafb8 url('../images/clipboard.png')no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+main .container .profile .profile-background {
+    display: flex;
+    width: 1720px;
+    height: 756px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+main .container .profile .profile-background .profile-img-txt {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+main .container .profile .profile-background .profile-img {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #000;
+}
+
+main .container .profile .profile-background .profile-txt {
+    width: 300px;
+    height: 200px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mo';
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+main .container .profile .profile-background .profile-txt p {
+    margin-bottom: 1rem;
+}
+
+main .container .profile .profile-background .tool-icon {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+    height: 350px;
+    position: absolute;
+    left: 59%;
+    top: 40%;
+}
+
+main .container .profile .profile-background .tool-icon img {
+    cursor: pointer;
+}
+
+main .container .profile .profile-background .tool-icon .html-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble3.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: -65%;
+    left: -4%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .html-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .js-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble4.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: -65%;
+    left: 7%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .js-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .css-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble1.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: -65%;
+    left: -4%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .css-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .blender-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble2.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: -65%;
+    left: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .blender-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .pr-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble6.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: 95%;
+    left: -4%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .pr-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .ae-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble5.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: 95%;
+    left: 7%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .ae-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .ai-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble8.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: 95%;
+    left: -4%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .ai-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .tool-icon .ps-i::after {
+    content: '';
+    display: block;
+    background: url('../images/bubble7.png') no-repeat center/620px 250px;
+    /* 나중에 글 넣은 배경으로 바꾸기 */
+    width: 620px;
+    height: 250px;
+    position: absolute;
+    top: 95%;
+    left: 5%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+main .container .profile .profile-background .tool-icon .ps-i:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .container .profile .profile-background .profile-bubble {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 400px;
+    margin-left: 2rem;
+    justify-content: center;
+    position: absolute;
+    left: 35%; top: 17%;
+}
+
+main .container .profile .profile-background .profile-bubble img {
+    width: 350px;
+    /* transform: translateY(-1rem); */
+}
+
+main .container .profile .profile-background .profile-bubble .education p {
+    font-size: 1.8rem;
+    font-family: 'Mo';
+    margin-bottom: 1rem;
+}
+
+main .container .profile .profile-background .profile-bubble .education p:nth-child(1)::before {
+    content: '';
+    display: inline-block;
+    background: url('../images/education_icon.png') no-repeat center/cover;
+    width: 50px;
+    height: 50px;
+    transform: translateY(1rem);
+}
+
+main .container .profile .profile-background .profile-bubble .education p:nth-child(3)::before {
+    content: '';
+    display: inline-block;
+    background: url('../images/career.png') no-repeat center/cover;
+    width: 35px;
+    height: 35px;
+    transform: translate(0.2rem, 0.6rem);
+    margin-right: 0.7rem;
+}
+
+main .container .profile .profile-background .profile-bubble .education p:nth-child(2),
+main .container .profile .profile-background .profile-bubble .education p:nth-child(4) {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+main .container .contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #1fafb8;
+    /* display: flex;
+    align-items: end;
+    justify-content: center; */
+    position: relative;
+    overflow: hidden;
+
+    display: none;
+}
+
+main .container .contact .contact-inner {}
+main .container .contact .contact-inner > p span:nth-child(1){
+    display: inline-block;
+    transform: rotate(90deg);
+}
+main .container .contact .contact-inner > p span:nth-child(2){
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+main .container .contact .contact-inner>p {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 9rem;
+    font-family: 'Mo';
+    text-align: center;
+}
+
+main .container .contact .contact-inner .contact-img img:nth-child(1) {
+    width: 50%;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+main .container .contact .contact-inner .contact-img img:nth-child(2) {
+    width: 48%;
+    height: 50%;
+    position: absolute;
+    bottom: -1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .container .contact .contact-inner .c-form {
+    background: url('../images/letter.png') no-repeat center/cover;
+    width: 50%;
+    height: 50rem;
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translateX(-50%);
+}
+
+main .container .contact .contact-inner .c-form p {
+    font-family: 'Mo';
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+main .container .contact .contact-inner .c-form form {
+    text-align: center;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+main .container .contact .contact-inner .c-form form label {
+    display: block;
+    margin: 1rem;
+}
+
+main .container .contact .contact-inner .c-form form input {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+main .container .contact .contact-inner .c-form form textarea {
+    width: 50%;
+}
+
+main .container .contact .contact-inner .c-form form .submit-btn {
+    background-color: #e81f42;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .container .contact .contact-inner .c-form form .submit-btn:hover {
+    background-color: #ffc02c;
+    color: #fff;
+    border: 1px solid #fff;
+}

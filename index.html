@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최은별 Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 글꼴 -->
+    <link rel="stylesheet" href="https://use.typekit.net/qck1irj.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/0c912ff604.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 시작화면 -->
+        <div class="container">
+            <div class="startmain">
+                <!-- startmain bcc img-->
+                <!-- start-img 2개 손 움직이게 animate -->
+                <div class="start_logo"><img src="images/start_logo.png" alt="logo"></div>
+                <div class="cloud">
+                    <img src="images/rightupcloud.png" alt="">
+                    <img src="images/upcloud.png" alt="">
+                    <img src="images/downcloud.png" alt="">
+                    <img src="images/leftcloud.png" alt="">
+                    <img src="images/star1.png" alt="">
+                    <img src="images/star2.png" alt="">
+                    <img src="images/star3.png" alt="">
+                    <img src="images/star4.png" alt="">
+                    <img src="images/star5.png" alt="">
+                    <img src="images/star6.png" alt="">
+                    <img src="images/star7.png" alt="">
+                </div>
+                <div class="star">
+                    
+                </div>
+                <div class="start_btn">
+                    <!-- span - 삼각형 -->
+                    <a href="#"><span></span> Insert coin</a>
+                </div>
+                <p>© Copyright 2024. Choi Eunbyeol. All rights reserved.</p>
+            </div>
+        </div>
+        <!-- 메인 -->
+        <main>
+            <div class="container">
+                <div class="main-item">
+                    <!-- bcc-video에 전체 화면으로 blur 넣기, video들이 순서 제일 뒤쪽 위치 -->
+                    <div class="bcc-video">
+                        <video autoplay muted loop>
+                            <source src="#" type="#">
+                        </video>
+                    </div>
+                    <div class="window">
+                        <div class="window-up">
+                            <div class="window-inner">
+                                <div class="window-in-up">
+                                    <p> Blender gif_지구_도넛설:\</p>
+                                    <div class="window-button">
+                                        <div class="window-line"><span></span>
+                                        </div>
+                                        <div class="window-x"><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="window-in-down">
+                                    <div class="window-down-inner">
+                                        <div class="window-inner-box"></div>
+                                        <!-- after로 loading? -->
+                                    </div>
+                                </div>
+                            </div>                             
+                        </div>
+                        <div class="window-down">
+                            <div class="win-inner">
+                                <div class="main-gif">
+                                    <!-- video 넣기 -->
+                                    <video autoplay loop>
+                                        <source src="video/예제.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="play-btn">
+                                    <div class="play-btn-box"></div>
+                                    <a href="#" class="play"><i class="fa-solid fa-play"></i> Play</a>
+                                    <a href="#" class="pause"><i class="fa-solid fa-pause"></i> Paused</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 클릭 -> 이력서 다운로드 아이콘 나오게 (마우스에 클릭 문구 뜨게)-->
+                    <div class="myicon">
+                        <div class="pro-icon">
+                        </div>
+                        <div class="download">
+                            <!-- 다운로드 기능 넣기 -->
+                            <h2>이력서 다운받기</h2>
+                            <img src="images/download.png" alt="이력서 다운로드">
+                        </div>
+                    </div>
+                    <div class="main-item-btn">
+                        <div class="contact_btn">
+                            <a href="#contact">
+                                <img src="images/contact-icon_final.png" alt="콘택트아이콘">
+                            </a>
+                        </div>
+                        <div class="profile_btn">
+                            <a href="#profile">
+                                <img src="images/profileicon_final.png" alt="프로필아이콘">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gotop">
+                        <a href="#"><img src="images/home_btn.png" alt="홈버튼"></a>
+                    </div>
+                </div>
+                <!-- 목록 -->
+                <nav class="main-li">
+                    <ul>
+                        <li id="myworks">MY WORKS
+                            <ul class="depth1 clear">
+                                <!-- hover 시 프로그램 아이콘 뜨게 (::after로 넣을수 있나? 가능~(백그라운드로 이미지))-->
+                                <!-- 이동할 수 있게 메뉴 페이지들에게 id 부여해야함 -->
+                                <li class="question" data-bgcolor="#004fce" data-font-color="#f29f05"><a href="#" data-bordercolor="#f29f05">3D/CG</a></li>
+                                <li class="A A-1">
+                                    <div #swiperRef="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <!-- <iframe width="700" height="394" src="https://www.youtube.com/embed/ulmSCi8YnJ0?autoplay=1&mute=1"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe> -->
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/startBg.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </li>
+                                <li class="question" data-bgcolor="#1fafb8" data-font-color="#e81f42"><a href="#" data-bordercolor="#e81f42">Video</a></li>
+                                <li class="A">
+                                    <div #swiperRef="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </li>
+                                <li class="question" data-bgColor="#f2f2f2" data-font-color="#030abc"><a href="#" data-bordercolor="#030abc">Design</a></li>
+                                <li class="A">
+                                    <div #swiperRef="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </li>
+                                <li class="question" data-bgcolor="#141f26" data-font-color="#a63333"><a href="#" data-bordercolor="#a63333">Works Process</a></li>
+                                <li class="A">
+                                    <div #swiperRef="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                            <div class="swiper-slide"></div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- 영상 팝업창 -->
+                <section class="section-popup">
+                    <!-- 팝업1 -->
+                    <div class="video-popup">
+                        <ul>
+                            <li><a href="#">3D/CG</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Works Process</a></li>
+                        </ul>
+                        <div class="txt">
+                            <a href="#" class="x-btn"></a>
+                            <h2>Work name</h2>
+                            <h3>제작 기간 : 24.~~~~~</h3>
+                            <div class="clip" data-yid="36mAsVSH_-s">
+                                <!-- <iframe width="700" height="394" src="https://www.youtube.com/embed/ulmSCi8YnJ0?autoplay=1&mute=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam at minus placeat quis distinctio ex dignissimos quasi qui, fugit perferendis soluta maiores numquam. Nam laborum debitis alias harum qui.</p>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-up">
+                                <div class="img-R">
+                                    <img src="#" alt="작업과정1">
+                                </div>
+                                <div class="img-L">
+                                    <img src="#" alt="작업과정2">
+                                </div>
+                            </div>
+                            <div class="img-down">
+                                <img src="#" alt="작업과정3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 팝업2 -->
+                    <div class="video-popup">
+                        <ul>
+                            <li><a href="#">3D/CG</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Works Process</a></li>
+                        </ul>
+                        <div class="txt">
+                            <a href="#" class="x-btn"></a>
+                            <h2>Work name</h2>
+                            <h3>제작 기간 : 24.~~~~~</h3>
+                            <div class="clip" data-yid="36mAsVSH_-s">
+                                <!-- <iframe width="700" height="394" src="https://www.youtube.com/embed/ulmSCi8YnJ0?autoplay=1&mute=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam at minus placeat quis distinctio ex dignissimos quasi qui, fugit perferendis soluta maiores numquam. Nam laborum debitis alias harum qui.</p>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-up">
+                                <div class="img-R">
+                                    <img src="#" alt="작업과정1">
+                                </div>
+                                <div class="img-L">
+                                    <img src="#" alt="작업과정2">
+                                </div>
+                            </div>
+                            <div class="img-down">
+                                <img src="#" alt="작업과정3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 팝업3 -->
+                    <div class="video-popup">
+                        <ul>
+                            <li><a href="#">3D/CG</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Works Process</a></li>
+                        </ul>
+                        <div class="txt">
+                            <a href="#" class="x-btn"></a>
+                            <h2>Work name</h2>
+                            <h3>제작 기간 : 24.~~~~~</h3>
+                            <div class="clip" data-yid="36mAsVSH_-s">
+                                <!-- <iframe width="700" height="394" src="https://www.youtube.com/embed/ulmSCi8YnJ0?autoplay=1&mute=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam at minus placeat quis distinctio ex dignissimos quasi qui, fugit perferendis soluta maiores numquam. Nam laborum debitis alias harum qui.</p>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-up">
+                                <div class="img-R">
+                                    <img src="#" alt="작업과정1">
+                                </div>
+                                <div class="img-L">
+                                    <img src="#" alt="작업과정2">
+                                </div>
+                            </div>
+                            <div class="img-down">
+                                <img src="#" alt="작업과정3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 팝업 4 -->
+                    <div class="video-popup">
+                        <ul>
+                            <li><a href="#">3D/CG</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Works Process</a></li>
+                        </ul>
+                        <div class="txt">
+                            <a href="#" class="x-btn"></a>
+                            <h2>Work name</h2>
+                            <h3>제작 기간 : 24.~~~~~</h3>
+                            <div class="clip" data-yid="36mAsVSH_-s">
+                                <!-- <iframe width="700" height="394" src="https://www.youtube.com/embed/ulmSCi8YnJ0?autoplay=1&mute=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam at minus placeat quis distinctio ex dignissimos quasi qui, fugit perferendis soluta maiores numquam. Nam laborum debitis alias harum qui.</p>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-up">
+                                <div class="img-R">
+                                    <img src="#" alt="작업과정1">
+                                </div>
+                                <div class="img-L">
+                                    <img src="#" alt="작업과정2">
+                                </div>
+                            </div>
+                            <div class="img-down">
+                                <img src="#" alt="작업과정3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 팝업 5 -->
+                    <div class="video-popup">
+                        <ul>
+                            <li><a href="#">3D/CG</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Works Process</a></li>
+                        </ul>
+                        <div class="txt">
+                            <a href="#" class="x-btn"></a>
+                            <h2>Work name</h2>
+                            <h3>제작 기간 : 24.~~~~~</h3>
+                            <div class="clip" data-yid="36mAsVSH_-s">
+                                <!-- <iframe width="700" height="394" src="https://www.youtube.com/embed/ulmSCi8YnJ0?autoplay=1&mute=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe> -->
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quisquam at minus placeat quis distinctio ex dignissimos quasi qui, fugit perferendis soluta maiores numquam. Nam laborum debitis alias harum qui.</p>
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="img-up">
+                                <div class="img-R">
+                                    <img src="#" alt="작업과정1">
+                                </div>
+                                <div class="img-L">
+                                    <img src="#" alt="작업과정2">
+                                </div>
+                            </div>
+                            <div class="img-down">
+                                <img src="#" alt="작업과정3">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- profile : 페이지 만들어놓고 숨겨놓기(클릭 시 이동가능)-->
+                <div class="profile" id="profile">
+                    <div class="profile-background">
+                        <div class="profile-img-txt">
+                            <div class="profile-img">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            <div class="profile-txt">
+                                <p>최은별</p>
+                                <p>1998.09.28</p>
+                            </div>
+                        </div>
+                        <div class="profile-bubble">
+                            <img src="images/introbubble.png" alt="자기소개 말풍선">
+                            <div class="education">
+                                <!-- <img src="images/" alt="교육 아이콘"> -->
+                                <p>Education</p>
+                                <p>2016 고등학교 졸업 <br>0000 대학교 졸업 <br>0000-----과정 수료</p>
+                                <p>Career</p>
+                                <p>00 - 00 병원 <br>00 - 00 의원</p>
+                                <!-- 자격증있을경우 자격증추가 -->
+                            </div>                        
+                        </div>
+                        <div class="tool-icon">
+                            <!-- span에 말풍선 이미지 넣을 예정 (hover 시 나타남) -->
+                            <div class="html-i">
+                                <img src="images/html_icon.png" alt="html">
+                            </div>
+                            <div class="js-i">
+                                <img src="images/js_icon.png" alt="js">
+                            </div>
+                            <div class="css-i">
+                                <img src="images/CSS_icon.png" alt="css">
+                            </div>
+                            <div class="blender-i">
+                                <img src="images/blender_icon.png" alt="blender">
+                            </div>
+                            <div class="pr-i">
+                                <img src="images/pr_icon.png" alt="pr">
+                            </div>
+                            <div class="ae-i">
+                                <img src="images/ae_icon.png" alt="ae">
+                            </div>
+                            <div class="ai-i">
+                                <img src="images/ai_icon.png" alt="ai">
+                            </div>
+                            <div class="ps-i">
+                                <img src="images/ps_icon.png" alt="ps">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact" id="contact">
+                    <div class="contact-inner">
+                        <!-- span 애니메이션 -->
+                        <p><span>☞</span>&nbsp;MOUSE ON&nbsp;<span>☜</span></p>
+                        <div class="contact-img">
+                            <img src="images/letterfront.png" alt="봉투 윗">
+                            <img src="images/letterback.png" alt="봉투 아래">
+                            <div class="letter">
+                                <!-- form 구조 -->
+                                <div class="c-form">
+                                    <form action="https://formspree.io/f/xoqgjdlv" method="post">
+                                        <ul>
+                                            <li>
+                                                <p>CONTACT</p>
+                                                <label for="username"></label>
+                                                <input type="text" placeholder="NAME" required id="username" name="username"
+                                                    minlength="2" autofocus>
+                                            </li>
+                                            <li>
+                                                <label for="usermail"></label>
+                                                <input type="email" placeholder="EMAIL" required id="useremail"
+                                                    name="useremail">
+                                            </li>
+                                            <li>
+                                                <label for="msg"></label>
+                                                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                                            </li>
+                                            <li>
+                                                <label for="submit"></label>
+                                                <input type="submit" value="SUBMIT" class="submit-btn">
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 영상 팝업창 내용 -->
+
+    </div>
+    <script>
+        new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 40,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+<!-- 스크롤 애니메이션 - 스크롤 배운걸로 적용해보기 (positio:sticky 말고) -->
+<!-- 설명 팝업창은 1개만 만들어놓고 안에 내용은 div로 따로 다 적어놓고 display none -> 그거 불러오는 식으로 하면 될 듯(videoplay) -->
+
+<!-- - 포폴 코딩
+최소화 버튼
+전체 큰 사이즈는 작아지게 + opacity 0 + bottom 0 주고
+내용물만 display none -->
+
+<!-- 윈도우 창 큰거 하나 그 밑에 형제관계로 만들고, 거기에 속한 얘들은 각 영역에 들어가도록 -->
+
+</html>
